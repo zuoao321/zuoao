@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HIIT 训练计时器</title>
+  <link rel="stylesheet" href="style.css">  <!-- 引入外部样式表:contentReference[oaicite:3]{index=3} -->
+</head>
+<body>
+  <h1>HIIT 训练计时器</h1>
+
+  <!-- 定时器显示区域 -->
+  <div id="timer-container">
+    <div id="mode">训练</div>       <!-- 显示当前模式：训练或休息 -->
+    <div id="timer">00:00</div>      <!-- 倒计时显示 -->
+  </div>
+
+  <!-- 视频播放区域 -->
+  <div id="video-container">
+    <!-- 使用 <video> 嵌入训练视频:contentReference[oaicite:4]{index=4} -->
+    <video id="exercise-video" controls width="320" height="240">
+      <source src="assets/videos/workout.mp4" type="video/mp4">
+      <source src="assets/videos/workout.webm" type="video/webm">
+      <!-- 回退文本：浏览器不支持时的提示 -->
+      您的浏览器不支持视频播放。<a href="assets/videos/workout.mp4">下载视频</a>。
+    </video>
+  </div>
+
+  <!-- 控制按钮 -->
+  <button id="start-btn">开始训练</button>
+
+  <!-- 提示音源（不显示默认控件）:contentReference[oaicite:5]{index=5} -->
+  <audio id="beep-sound" src="assets/audio/beep.mp3"></audio>
+  <audio id="end-sound" src="assets/audio/end.mp3"></audio>
+
+  <script src="script.js"></script>  <!-- 引入外部脚本 -->
+</body>
+</html>
 
