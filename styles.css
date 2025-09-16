@@ -1,0 +1,4 @@
+styles.css
+h1 { color: #007bff; font-size: 24px; font-family: "微软雅黑", sans-serif; }
+body { background-color: #f0f0f0; /* 浅灰背景 */ }
+header { background-image: url('banner.jpg'); background-size: cover; }
